@@ -1,0 +1,18 @@
+### query
+POST http://localhost:8080/graphql
+Content-Type: application/json
+
+{
+  "query": "{\n  recentPosts(count: 10, offset: 0) {\n    id\n    title\n    text\n    category\n    author {\n      id\n      name\n      thumbnail\n    }\n  }\n}\n"
+}
+
+### mutation
+POST http://localhost:8080/graphql
+Content-Type: application/json
+
+{
+  "query": "mutation {\n  writePost(title: \"title1\", text: \"text1\", category: \"book\", author: \"Author0\") {\n    id\n  }\n}",
+  "variables": null
+}
+
+###
