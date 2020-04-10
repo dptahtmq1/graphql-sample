@@ -1,0 +1,5 @@
+mutation {
+    writePost(title: "title1", text: "text1", category: "book", author: "Author0") {
+        id
+    }
+}
