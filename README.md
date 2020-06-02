@@ -231,3 +231,7 @@ private GraphQLTestTemplate graphQLTestTemplate;
 
 GraphQLResponse response = graphQLTestTemplate.postForResource("graphql/getPost.graphql");
 ```
+
+## 참조
+* https://www.baeldung.com/spring-graphql
+* https://github.com/graphql-java-kickstart/graphql-spring-boot
